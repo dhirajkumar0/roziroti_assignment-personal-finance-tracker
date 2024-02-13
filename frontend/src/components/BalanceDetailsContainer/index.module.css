@@ -1,0 +1,86 @@
+.balaceDetailsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.balaceDetailsContainer > div {
+  margin-bottom: 20px;
+}
+
+.balanceContainer {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border: 1px solid rgb(44, 240, 13);
+  background-color: rgba(44, 240, 13, 0.2);
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.incomeContainer {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border: 1px solid rgb(13, 172, 240);
+  background-color: rgba(13, 172, 240, 0.2);
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.expensesContainer {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  border: 1px solid rgb(123, 13, 240);
+  background-color: rgba(123, 13, 240, 0.2);
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.iconImage {
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+.displayText {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(121, 116, 116);
+}
+
+.displayMoney {
+  margin: 0;
+  font-size: 24px;
+  color: rgb(121, 116, 116);
+  margin-top: 5px;
+}
+
+.displayMoneyPlaceholder {
+  height: 30px;
+  background-color: rgb(132, 128, 128);
+  border-radius: 6px;
+  margin: 0;
+  margin-top: 5px;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,10 @@
+.appContainer {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.responsiveContainer {
+  width: 80%;
+  margin-top: 30px;
+}

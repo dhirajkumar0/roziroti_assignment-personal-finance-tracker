@@ -1,0 +1,71 @@
+POST http://localhost:3008/register
+Content-Type: application/json
+
+{
+    "isChecked": true ,
+    "work": "Learn Java"
+}
+
+### 
+
+POST http://localhost:3008/register
+Content-Type: application/json
+
+{
+   "username": "Ram", 
+   "password": "12345678"
+}
+### 
+
+POST http://localhost:3008/login
+Content-Type: application/json
+
+{
+   "username": "Tejas", 
+   "password": "12345678"
+}
+
+##########
+
+
+
+GET http://localhost:3008/transaction
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiVGVqYXMiLCJpYXQiOjE3MDc2NzU1OTd9.vU3uzSchKCSAHuJ-lWErU0TwbFSj3YWROD5CzoWAV6o
+
+
+### 
+
+POST http://localhost:3008
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiVGVqYXMiLCJpYXQiOjE3MDc2NzU1OTd9.vU3uzSchKCSAHuJ-lWErU0TwbFSj3YWROD5CzoWAV6o
+Content-Type: application/json
+
+{
+   "amount": 2000, 
+   "category": "EXPENSES", 
+   "title": "Tution"
+}
+
+##########
+### 
+
+PATCH http://localhost:3008
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiVGVqYXMiLCJpYXQiOjE3MDc2NzU1OTd9.vU3uzSchKCSAHuJ-lWErU0TwbFSj3YWROD5CzoWAV6o
+Content-Type: application/json
+
+{
+   "amount": 50000, 
+   "category": "INCOME", 
+   "tId": 1
+}
+
+##########
+
+DELETE http://localhost:3008
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiVGVqYXMiLCJpYXQiOjE3MDc2NzU1OTd9.vU3uzSchKCSAHuJ-lWErU0TwbFSj3YWROD5CzoWAV6o
+Content-Type: application/json
+
+{
+   "tId": 1
+}
+
+##########

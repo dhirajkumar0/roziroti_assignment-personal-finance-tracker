@@ -1,0 +1,77 @@
+.greetingContainer {
+  height: 172px;
+  background: url("https://res.cloudinary.com/do4qwwms8/image/upload/v1626263091/Money%20Manager/money-manager-header_rxlcrn.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 48px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .greetingContainer {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.greetingTitle {
+  font-size: 34px;
+  color: rgb(67, 63, 63);
+  font-weight: 600;
+  margin: 0;
+}
+.greetingPara {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(149, 144, 144);
+}
+.greetingPara span {
+  color: rgb(23, 106, 173);
+}
+
+.logoutBtn {
+  position: absolute;
+  background-color: #0b91ff;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 15px;
+  border-radius: 6px;
+  padding: 8px 16px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  border: 1px solid red;
+}
+
+.greetingParaPlaceholder {
+  width: 300px;
+  background-color: rgb(118, 114, 114);
+  border-radius: 6px;
+  height: 20px;
+  margin: 0;
+  animation: blink 1s linear infinite;
+}
+.greetingTitlePlaceholder {
+  width: 200px;
+  background-color: rgb(118, 114, 114);
+  border-radius: 6px;
+  height: 40px;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
